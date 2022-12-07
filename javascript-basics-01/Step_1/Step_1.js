@@ -1,2 +1,2 @@
-name = "Codi"
+let name = "Codi"
 alert(name)
