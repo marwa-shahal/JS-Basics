@@ -1,0 +1,2 @@
+name = "Codi"
+alert(name)
