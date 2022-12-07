@@ -10,11 +10,10 @@ const city_prompt= prompt("Enter your city");
 let city_input = document.getElementById("city");
 city.value=city_prompt;
 
-let identity = document.getElementsByTagName("form")[0]
-identity.addEventListener("submit", (e)=>{
-    e.preventDefault()
-    const name = e.target.name.value;
-    const surname = e.target.surname.value;
-    const city = e.target.city.value;
+let validate = document.getElementById("validate")
+validate.addEventListener("click", ()=>{
+    const name = document.getElementById("name").value;
+    const surname = document.getElementById("surname").value;
+    const city = document.getElementById("city").value;
     alert("name:"+ name  +"\n"+ "surname: "+ surname + "\n"+"city: " + city)
 })
